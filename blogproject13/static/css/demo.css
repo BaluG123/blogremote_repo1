@@ -1,0 +1,15 @@
+.content{
+  width: 60%;
+  float: left;
+  padding: 0 0 0 10px;
+}
+.sidebar{
+  width: 39%;
+  float: right;
+
+}
+body{
+  font-family: 'PT Serif', serif;
+  margin-top: 80px;
+  margin-left: 4px;
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block title %}
+Create new post
+{% endblock %}
+{% block content %}
+<h1><mark><small><i><strong>create new post</strong></i></small></mark></h1>
+<form method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="" value="create">
+</form>
+{% endblock %}

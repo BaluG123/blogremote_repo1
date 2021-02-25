@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block title %}
+LogIn Form
+{% endblock %}
+{% block content %}
+<h1 align=center>Login</h1>
+<div class="container">
+<div class="jumbotron">
+  <form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" name="" value="LogIn" class="btn btn-sm btn-success">
+    <p>new user..?</p><a href="/signup">click here to signup</a>
+  </form>
+
+</div>
+</div>
+{% endblock %}
